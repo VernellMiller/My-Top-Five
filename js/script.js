@@ -37,10 +37,11 @@ function handleGetPokeData(event) {
     });
 
     function render() {
-        $sprites.text(pokeData.sprites);
+        $sprites.attr("src",pokeData.sprites.front_default);
         $id.text(pokeData.id);
         $name.text(pokeData.name);
-        $type.text(pokeData.type);
+        $type.text(pokeData.types);
+        
     }
 
 
