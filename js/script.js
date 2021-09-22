@@ -45,6 +45,8 @@ function handleGetPokeData(event) {
         $type.text(pokeData.types[0].type.name);
         
     }
-
+    $("#id",).css( { color: "#3C59A5", "font-weight": "bold", "font-size": "40px" } );
+    $("#name",).css( { color: "#3C59A5", "font-weight": "bold", "font-size": "40px" } );
+    $("#type",).css( { color: "#3C59A5", "font-weight": "bold", "font-size": "40px" } );
 
 }
