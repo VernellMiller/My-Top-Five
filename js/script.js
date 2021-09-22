@@ -9,7 +9,7 @@
 
 // Cached Elements References
 
-const $sprites = $("#sprites");
+const $sprites = $("#sprites img");
 const $id = $("#id");
 const $name = $("#name");
 const $type = $("#type");
@@ -37,9 +37,9 @@ function handleGetPokeData(event) {
     });
 
     function render() {
-        // $("img").attr({src:""})
-        $sprites.empty();
-        $sprites.append(`<div id="sprites"><img src="${pokeData.sprites.front_default}" alt="image of Pokemon"></div>`);
+        $sprites.attr("src", pokeData.sprites.front_default);
+        // $sprites.empty();
+        // $sprites.append(`<div id="sprites"><img src="${pokeData.sprites.front_default}" alt="image of Pokemon"></div>`);
         $id.text(pokeData.id);
         $name.text(pokeData.name);
         $type.text(pokeData.types[0].type.name);
