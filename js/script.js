@@ -37,10 +37,12 @@ function handleGetPokeData(event) {
     });
 
     function render() {
-        $sprites.attr("src",pokeData.sprites.front_default);
+        // $("img").attr({src:""})
+        $sprites.empty();
+        $sprites.append(`<div id="sprites"><img src="${pokeData.sprites.front_default}" alt="image of Pokemon"></div>`);
         $id.text(pokeData.id);
         $name.text(pokeData.name);
-        $type.text(pokeData.types);
+        $type.text(pokeData.types[0].type.name);
         
     }
 
