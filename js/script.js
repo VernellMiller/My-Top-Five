@@ -10,6 +10,7 @@ const $id = $("#id");
 const $name = $("#name");
 const $type = $("#type");
 const $info = $("#info");
+const $choose = $("#choose");
 
 // Event Listeners
 const $form = $("form");
@@ -29,9 +30,18 @@ function render(pokeData) {
 
 }
 
+// I want a function that changes the background color depending on the type of Pokemon
+
+//EXAMPLES:
+// if the Pokemon is a water type change background to blue
+// if the Pokemon is a fire type change background to red
+// if the Pokemon is a electric type change background to yellow
+// if the Pokemon is a grass type change background to green
+
 function restyle(pokeData) {
     if(pokeData.types[0].type.name === "water") {
-        $("body",).css( { "background-color": "#3C59A5"} );
+        $("body",).css( { "background-color": "#52A9FF"} );
+        $("#choose",).css( { "color": "white"} );
         $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
         $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
         $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
@@ -42,6 +52,97 @@ function restyle(pokeData) {
         $("#name",).css( { color: "#3C59A5", "font-weight": "bold", "font-size": "40px"} );
         $("#type",).css( { color: "#3C59A5", "font-weight": "bold", "font-size": "40px"} );
     }
+    if(pokeData.types[0].type.name === "fire") {
+        $("body",).css( { "background-color": "#FF6144"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "grass") {
+        $("body",).css( { "background-color": "#8CD46F"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "psychic") {
+        $("body",).css( { "background-color": "#FF6FA9"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "poison") {
+        $("body",).css( { "background-color": "#B76FA9"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "rock") {
+        $("body",).css( { "background-color": "#C5B77D"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "ground") {
+        $("body",).css( { "background-color": "#C26F40"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "flying") {
+        $("body",).css( { "background-color": "#A0CBED"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "normal") {
+        $("body",).css( { "background-color": "#B7B7A9"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+    if(pokeData.types[0].type.name === "bug") {
+        $("body",).css( { "background-color": "#B7C544"} );
+        $("#choose",).css( { "color": "white"} );
+        $("#id",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+        $("#name",).css( { color: "white", "font-weight": "bold", "font-size": "40px"} );
+        $("#type",).css( { color: "white","font-weight": "bold", "font-size": "40px"} );
+    
+    }else {
+
+    }
+
 }
 function handleGetPokeData(event) {
 
@@ -58,19 +159,6 @@ function handleGetPokeData(event) {
     }, function (error) {
         console.log(error);
     });
-
-    
-
-
-    
-
-    // I want a function that changes the background color depending on the type of Pokemon
-
-    //EXAMPLES:
-    // if the Pokemon is a water type change background to blue
-    // if the Pokemon is a fire type change background to red
-    // if the Pokemon is a electric type change background to yellow
-    // if the Pokemon is a grass type change background to green
 
    
 
