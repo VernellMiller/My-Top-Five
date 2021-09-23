@@ -35,4 +35,4 @@ Lets settle the debate amongst your friends once and for all by selecting your T
 - selection of your favorite Pokemon in the order of your choosing.
 - rearrange the order after selections have been made.
 - ability to search the entire database without the user having to input a Pokemon name.
-- background color changes depending on type of pokemon.
+- background color changes depending on type of Pokemon. using a switch statement
