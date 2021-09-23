@@ -16,6 +16,7 @@ header, footer {
     align-items: center;
     height: 3.125rem;
     justify-content: center;
+    align-content: center;
 }
 
 main {
@@ -23,6 +24,8 @@ main {
     flex-grow: 1;
     display: flex;
     /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* add anything new below this line. */
@@ -39,6 +42,7 @@ h1 {
 
 form {
     margin-top: 15px;
+    margin-left: 50px;
 }
 
 #submit {
@@ -46,6 +50,9 @@ form {
     height: 59px;
     padding: 20px;
     align-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
 }
 
 #info>p {
@@ -53,3 +60,37 @@ form {
     color: white;
 }
 
+#info, form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#id, #name, #type {
+    padding-right: 20px;
+    margin-left: 10px;
+    margin-top: 32px;
+}
+
+#pokeName {
+    height: 59px;
+    width: 200px;
+}
+
+#sprites>img {
+    /* border: 1px solid gray; */
+    /* padding: 50px; */
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+    
+
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 50px;
+    
+}
