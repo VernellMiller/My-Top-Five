@@ -27,7 +27,7 @@ Lets settle the debate amongst your friends once and for all by selecting your T
 
 # Getting Started:
 
-[Click here](#) to see the deployed project.
+[Click here](https://vernellmiller.github.io/My-Top-Five/) to see the deployed project.
 
 
 # Future Enhancements :
